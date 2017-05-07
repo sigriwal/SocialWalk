@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/steps_settings_title">
+
+
+        <com.example.android.socialwalk.preferences.StepLengthPreference
+            android:key="step_length"
+            android:title="@string/height_setting"
+            android:dialogTitle="@string/height_setting_title"
+            android:defaultValue="120" />
+
+        <com.example.android.socialwalk.preferences.BodyWeightPreference
+            android:key="body_weight"
+            android:title="@string/body_weight_setting"
+            android:dialogTitle="@string/body_weight_setting_title"
+            android:defaultValue="50" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

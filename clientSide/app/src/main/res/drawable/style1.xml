@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:state_focused="true">
+    <shape>
+        <gradient 
+            android:startColor="#2f847c"
+            android:centerColor="#2f847c"
+            android:endColor="#2f847c"
+            android:angle="270"
+        />
+        <stroke
+            android:width="2.7dp"
+            android:color="#2f847c" />
+         <corners
+            android:radius="10dp" />
+    </shape>
+</item>
+
+<item android:state_pressed="true" android:state_focused="false">
+    <shape>
+        <gradient 
+            android:startColor="#2f847c"
+            android:centerColor="#2f847c"
+            android:endColor="#2f847c"
+            android:angle="270"
+        />
+        <stroke
+            android:width="2.7dp"
+            android:color="#2f847c" />      
+        <corners
+            android:radius="10dp" />       
+    </shape>
+</item>
+
+<item android:state_pressed="false" android:state_focused="true">
+    <shape>
+        <gradient 
+            android:startColor="#2f847c"
+            android:centerColor="#2f847c"
+            android:endColor="#2f847c"
+            android:angle="270"
+        />
+        <stroke
+            android:width="2.7dp"
+            android:color="#3b9c9c" />  
+        <corners
+            android:radius="10dp" />                          
+    </shape>
+</item>
+
+<item android:state_pressed="false" android:state_focused="false">
+    <shape>
+        <gradient 
+            android:startColor="#2f847c"
+            android:centerColor="#2f847c"
+            android:endColor="#2f847c"
+            android:angle="270"
+        />
+        <stroke
+            android:width="2.7dp"                
+            android:color="#3b9c9c" /> 
+        <corners
+            android:radius="10dp" />            
+    </shape>
+</item>
+
+<item android:state_enabled="true">
+    <shape>
+        <padding 
+                android:left="4dp"
+                android:top="4dp"
+                android:right="4dp"
+                android:bottom="4dp"
+            />
+    </shape>
+</item>
+    
+
+</selector>

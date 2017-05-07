@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.doctor_i.MainActivity"
+    android:background="@color/screen_background">
+    <!-- Name Label -->
+    <TextView android:id="@+id/name_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:textColor="#43bd00"
+        android:layout_alignParentTop="true"/>
+    <!-- Email Label -->
+    <TextView android:id="@+id/email_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#acacac"
+        android:layout_below="@id/name_label"/>
+    <!-- Mobile Label -->
+    <TextView android:id="@+id/mobile_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@id/email_label"/>
+
+    <!-- Address Label -->
+    <TextView android:id="@+id/addr1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#acacac"
+        android:layout_below="@id/mobile_label"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tag"
+        android:text="Sponsored By:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/addr1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_of_Sponsors"
+        android:layout_below="@id/tag">
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Let's Walk"
+        android:id="@+id/supportButton"
+        android:onClick="supportList"
+        android:background="@drawable/style2"
+        android:textColor="@color/screen_background"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#673AB7</color>
+    <color name="primary_dark">#512DA8</color>
+    <color name="accent">#8BC34A</color>
+    <color name="screen_background">#fff</color>
+    <color name="display_background">#fdb</color>
+    <color name="LemonChiffon">#FFFACD</color>
+    <color name="Seashell">#3A9B9D</color>
+    <color name="transparent">#00000000</color>
+</resources>

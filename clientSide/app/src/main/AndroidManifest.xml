@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.socialwalk">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Internet permission -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+      <!--  <activity
+            android:name="com.example.android.socialwalk.demo_screen"
+            android:theme="@android:style/Theme.Translucent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity> -->
+
+
+        <activity
+            android:name=".Splash"
+
+            android:configChanges="orientation">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Single List Item Activity -->
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SingleContactActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo"
+            android:parentActivityName="com.example.android.socialwalk.MainActivity" >
+
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.socialwalk.MainActivity" />
+        </activity>
+
+        <activity android:name=".Settings"
+            android:label="@string/activity_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Pedometer"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo"
+            android:parentActivityName="com.example.android.socialwalk.MainActivity" >
+
+            <intent-filter>
+                <action android:name="com.example.android.socialwalk.PEDOMETER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.socialwalk.MainActivity" />
+        </activity>
+
+        <activity android:name=".UserLogin"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.android.socialwalk.USERLOGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DemoScreen"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.example.android.socialwalk.DEMOSCREEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterUser"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.android.socialwalk.REGISTERUSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Prefs"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.android.socialwalk.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".StepService"/>
+
+    </application>
+
+</manifest>
